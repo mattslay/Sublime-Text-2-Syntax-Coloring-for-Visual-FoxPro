@@ -7,7 +7,7 @@ See this link for for a screenshot: http://bit.ly/M0Ic48
 
 
 ## About the files...
-There are 2 files in this repo. One is the JSON source that you use to define the coloring patterns, and then you do a "build" that file to generate the actual XML file that Sublime Text 2 uses to do the coloring.
+There are 2 files in this repo. One is the JSON source that you use to define the coloring patterns, and then you do a "build" on that file to generate the actual XML file that Sublime Text 2 uses to do the coloring.
 
 >JSON Source file: Visual Foxpro.JSON-tmLanguage  
  XML file: Visual Foxpro.tmLanguage  
