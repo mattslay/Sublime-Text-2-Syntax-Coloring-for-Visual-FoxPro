@@ -20,11 +20,13 @@ Copy the files to this location (Windows 7 folor location):
 ## How to develop, build, or customize
 I'm sure there is plenty of work that needs to be done on the JSON definition file to really fine tune this coloring and properly define the FoxPro language. It has the notion of "scopes", "keywords", "control structures", and so on. My guess is that properly defining each of these areas allows Sublime to carry out some of it's advanced editing features, but that's jsut a guess. I've only spent a small amount of time with it so far, but, hey, as you can see from the screen shot link above, it seems to work pretty well for now.
 
+(Note: the current list of keywords that you'll see at the top of my JSON file is just a list I extraced from an existing NotePad++ syntax file that's been around for a few years. I have moved a few of the keywords out of this main blob and down into sepatate blocks at the bottom of the file to make it clearer and to begin the proper separation of the words by their syntax type. More work probably needs to be done in
+
 So, if you want to dig in and get involoved, here are the steps to learn the JSON syntax for defining a language file in Sublime Text, and the steps you'll need to take to do a "build" on that JSON file to generate the working XML file that ultimately does the actual work. Hint, you've got to install a little package in Sublime to get the JSON-to-XML builder tool. You'll see instructions at the very top of this page:  
 >http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/syntaxdefs.html?highlight=syntax
 
 ## Additional resources...
-If found this JSON definition file for the VB.Net langauge and it helped me see the various section of the JSON definitions that can be used to properly define various "scopes", "keywords", "control structures" sections. I think you can get some good understanding of a language definition by studying this package:
+If found this JSON definition file for the VB.Net langauge which helped me see the various sections of the JSON definitions that can be used to properly define the various "scopes", "keywords", "control structures" sections. I think you can get some good understanding of a language definition by studying this package:
 
 https://github.com/angryant0007/VBDotNetSyntax/blob/master/vbdotnet.JSON-tmLanguage
 
