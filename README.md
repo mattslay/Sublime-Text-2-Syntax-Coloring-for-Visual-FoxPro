@@ -1,9 +1,10 @@
 Sublime-Text-2-Syntax-Coloring-for-Visual-FoxPro
 ================================================
 
+This is an early version of the syntax coloring file, but it's working pretty well for most PRG files that I've worked with so far. If you dig in and make any changes, please for this repo and send a pull request.  
+
 See this link for for a screenshot: http://bit.ly/M0Ic48
 
-This is an early version of the syntax coloring file, but it's working pretty well for most PRG files that I've worked with so far. If you dig in and make any changes, please for this repo and send a pull request.
 
 ## About the files...
 There are 2 files in this repo. One is the JSON source that you use to define the coloring patterns, and then you do a "build" that file to generate the actual XML file that Sublime Text 2 uses to do the coloring.
