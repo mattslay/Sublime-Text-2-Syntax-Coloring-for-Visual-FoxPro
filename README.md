@@ -8,7 +8,7 @@ This is an early version of the syntax coloring file, but it's working pretty we
 About the files...
 There are 2 files in this repo. One is the JSON source that you use to define the coloring patterns, and then you do a "build" that file to generate the actual XML file that Sublime Text 2 uses to do the coloring.
 
->>JSON Source file: Visual Foxpro.JSON-tmLanguage  
+>JSON Source file: Visual Foxpro.JSON-tmLanguage  
  XML file: Visual Foxpro.tmLanguage  
 
 Copy the files to this location (Windows 7 folor location):  
