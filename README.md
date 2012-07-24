@@ -16,7 +16,7 @@ Technically, you only need the XML file to allow Sublime Text to do the coloring
 
 ##Where to place the files...
 Copy the files to this location (Windows 7 folor location):  
->"C:\Users\\<UserName>\AppData\Roaming\Sublime Text 2\Packages\User\"
+>"C:\Users\\<UserName\>\AppData\Roaming\Sublime Text 2\Packages\User\"
 
 ## How to develop, build, or customize
 I'm sure there is plenty of work that needs to be done on the JSON definition file to really fine tune this coloring and properly define the FoxPro language. It has the notion of "scopes", "keywords", "control structures", and so on. My guess is that properly defining each of these areas allows Sublime to carry out some of it's advanced editing features, but that's jsut a guess. I've only spent a small amount of time with it so far, but, hey, as you can see from the screen shot link above, it seems to work pretty well for now.
