@@ -11,7 +11,7 @@ There are 2 files in this repo. One is the JSON source that you use to define th
 >JSON Source file: Visual Foxpro.JSON-tmLanguage  
  XML file: Visual Foxpro.tmLanguage  
 
-Technically, you only need the XML file to allow Sublime Text to do the coloring. If you want to make changes you could hack the XML directly, but it's a better practice , to edit the JSON file, and then do a "build" to re-generate the xml file.
+Technically, you only need the XML file to allow Sublime Text to do the coloring. If you want to make changes you could hack the XML file directly, but it's a better practice to edit the JSON file, and then do a "build" to re-generate the xml file.
 
 ##Where to place the files...
 Copy the files to this location (Windows 7 folor location):  
