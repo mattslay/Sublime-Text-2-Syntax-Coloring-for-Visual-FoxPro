@@ -11,5 +11,6 @@ There are 2 files in this repo. One is the JSON source that you use to define th
 >JSON Source file: Visual Foxpro.JSON-tmLanguage  
  XML file: Visual Foxpro.tmLanguage  
 
+##Where to place the files...
 Copy the files to this location (Windows 7 folor location):  
 >"C:\Users\<<UserName>>\AppData\Roaming\Sublime Text 2\Packages\User\"
