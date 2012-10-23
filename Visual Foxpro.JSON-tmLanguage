@@ -11,6 +11,8 @@
   	{ "include": "#numericConstant"},
   	{ "include": "#constant"},
   	{ "include": "#controlKeywords"},
+  	{ "include": "#classDefinition" },
+	{ "include": "#functionDefinition"},
 	{ "match": "(?i:\\b(acla|aclass|adbo|adbobjects|adat|adatabases|adir|adoc|adockstate|aerr|aerror|aeve|aevents|afie)\\b)", "name": "keywords.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(afields|afon|afont|agetc|agetclass|agetf|agetfileversion|ainst|ainstance|alan|alanguage|alin)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(alines|amem|amembers|amou|amouseobj|anet|anetresources|apri|aprinters|apro|aprocinfo|asql|asqlhandles)\\b)", "name": "keyword.foxpro", "comment": "" },
@@ -68,7 +70,7 @@
 	{ "match": "(?i:\\b(endprintjob|endp|ends|endt|endtr|endw|eras|erase|erro|exit|expo|export|exte|external|fina|flus|flush)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(func|gath|gather|gete|getexpr|go|goto|help|hidd|hide|impl|impo|import|inde|index|inse|keyb|keyboard)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(labe|list|local|loca|locate|loop|lpar|md|mkdi|modi|modify|mous|mouse|move|node|nodefault|note|open)\\b)", "name": "keyword.foxpro", "comment": "" },
-	{ "match": "(?i:\\b(opendatatip|othe|otherwise|pack|para|parameters|play|pop|prin|printjob|priv|private|proc|prot|publ)\\b)", "name": "keyword.foxpro", "comment": "" },
+	{ "match": "(?i:\\b(opendatatip|othe|otherwise|pack|para|parameters|play|pop|prin|printjob|priv|private|prot|publ)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(public|push|quit|rd|read|reca|recall|rein|reindex|rele|release|remo|remove|rena|rename|repl|replace)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(arepltip|repo|restore|resu|resume|retr|retry|retu|rmdi|roll|rollback|run|scat|scatter|seek|sele|sort)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(stor|store|sum|susp|suspend|thro|throw|tota|total|unlo|unlock|upda|use|usetip|vali|validate|wait|zap)\\b)", "name": "keyword.foxpro", "comment": "" },
@@ -91,14 +93,14 @@
 	{ "match": "(?i:\\b(nooptimize|nooverwrite|nopageeject|noprompt|norefresh|norequery|noreset|norgrid|norm|normal|nosave|noshow)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(notify|nowait|nowindow|nozoom|null|nulldisplay|object|objects|odometer|of|off|oleobject|on|optimize|order|pad)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(page|palette|panel|partition|password|path|pdox|pdsetup|percent|pictres|picture|pixels|plain|point|popup|popups)\\b)", "name": "keyword.foxpro", "comment": "" },
-	{ "match": "(?i:\\b(position|preference|pretext|preview|primary|printer|procedures|production|project|prompt|protected|query|range)\\b)", "name": "keyword.foxpro", "comment": "" },
+	{ "match": "(?i:\\b(position|preference|pretext|preview|primary|printer|production|project|prompt|protected|query|range)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(readborder|readwrite|recompile|record|recover|recycle|redit|reference|references|refresh|relation|relative|remote)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(report|reportbehavior|reprocess|resource|resources|rest|return|right|rmdir|rollover|rpd|rtljustify|safety|same|save)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(scheme|screen|scroll|sdf|seconds|select|selection|separator|set|share|sheet|shift|short|shortcut|show|shutdown|size)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(skip|space|sql|sqlbuffering|status|step|strictdate|structure|style|summary|sylk|sysformats|sysmenu|system|tab|table)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(tables|tablevalidate|tag|taiwan|talk|textmerge|time|timeout|title|to|top|topic|transaction|try|endtry|trbetween|trigger|type)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(typeahead|udfparms|union|unique|update|usa|userid|valid|value|values|varcharmapping|view|views|when|where|while)\\b)", "name": "keyword.foxpro", "comment": "" },
-	{ "match": "(?i:\\b(endtext|define|class|enddefine|proc|procedure|endproc|include|func|function|endfunc)\\b)", "name": "keyword.foxpro", "comment": "" },
+	{ "match": "(?i:\\b(endtext|define|class|enddefine|endproc|include|func|function|endfunc)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(awidth|window|windows|wks|wrap|wrk|xls|ymd|zoom|and|or|not)\\b)", "name": "keyword.foxpro", "comment": "" },
 	{ "match": "(?i:\\b(this|thisform)\\b)", "name": "keyword.foxpro", "comment": "" }
 ],
@@ -119,7 +121,32 @@
 
 	"controlKeywords": {
 		  "name": "keyword.control.foxpro",
-		  "match": "(?i:\\b(if|else|endif|with|endwith|do case|case|endcase|)\\b)"
+		  "match": "(?i:\\b(if|else|endif|with|endwith|do case|case|endcase|)\\b)"},
+	"functionDefinition": {
+		"name": "meta.function.vbnet",
+		"begin": "(?i:\\b(proc[e]?[d]?[u]?[r]?[e]?|func[t]?[i]?[o]?[n]?)\\s+([a-zA-Z_]\\w*)\\s*(\\()?)",
+		"beginCaptures": {
+			"1": { "name": "support.type.function.vbnet" },
+		    "2": { "name": "entity.name.function.vbnet" },
+		    "3": { "name": "meta.parameters.vbnet"},
+		    "4": { "name": "punctuation.definition.parameters.vbnet" }
+		},
+		"patterns": [
+			{ "include": "#otherKeywords" },
+			{ "include": "#supportTypes" }
+		],
+		"end": "(\\))?\\s*",
+		"endCaptures": {
+		    "1": { "name": "punctuation.definition.parameters.vbnet" }
+		}
+	},
+	"classDefinition":{
+		"name": "meta.class.foxpro",
+		"match": "(?i:\\b(define class)\\s+([a-zA-Z_]\\w*)\\s*)",
+		"captures": {
+			"1": { "name": "storage.type.class.vbnet" },
+			"2": { "name": "entity.name.type.class.vbnet" }
+		}
 	}
 	
 },

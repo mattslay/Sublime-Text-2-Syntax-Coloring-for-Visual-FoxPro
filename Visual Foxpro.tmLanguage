@@ -47,6 +47,14 @@
 			<string>#controlKeywords</string>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>#classDefinition</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#functionDefinition</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string></string>
 			<key>match</key>
@@ -506,7 +514,7 @@
 			<key>comment</key>
 			<string></string>
 			<key>match</key>
-			<string>(?i:\b(opendatatip|othe|otherwise|pack|para|parameters|play|pop|prin|printjob|priv|private|proc|prot|publ)\b)</string>
+			<string>(?i:\b(opendatatip|othe|otherwise|pack|para|parameters|play|pop|prin|printjob|priv|private|prot|publ)\b)</string>
 			<key>name</key>
 			<string>keyword.foxpro</string>
 		</dict>
@@ -690,7 +698,7 @@
 			<key>comment</key>
 			<string></string>
 			<key>match</key>
-			<string>(?i:\b(position|preference|pretext|preview|primary|printer|procedures|production|project|prompt|protected|query|range)\b)</string>
+			<string>(?i:\b(position|preference|pretext|preview|primary|printer|production|project|prompt|protected|query|range)\b)</string>
 			<key>name</key>
 			<string>keyword.foxpro</string>
 		</dict>
@@ -746,7 +754,7 @@
 			<key>comment</key>
 			<string></string>
 			<key>match</key>
-			<string>(?i:\b(endtext|define|class|enddefine|proc|procedure|endproc|include|func|function|endfunc)\b)</string>
+			<string>(?i:\b(endtext|define|class|enddefine|endproc|include|func|function|endfunc)\b)</string>
 			<key>name</key>
 			<string>keyword.foxpro</string>
 		</dict>
@@ -769,6 +777,26 @@
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>classDefinition</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.class.vbnet</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.class.vbnet</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i:\b(define class)\s+([a-zA-Z_]\w*)\s*)</string>
+			<key>name</key>
+			<string>meta.class.foxpro</string>
+		</dict>
 		<key>comment1</key>
 		<dict>
 			<key>match</key>
@@ -796,6 +824,57 @@
 			<string>(?i:\b(if|else|endif|with|endwith|do case|case|endcase|)\b)</string>
 			<key>name</key>
 			<string>keyword.control.foxpro</string>
+		</dict>
+		<key>functionDefinition</key>
+		<dict>
+			<key>begin</key>
+			<string>(?i:\b(proc[e]?[d]?[u]?[r]?[e]?|func[t]?[i]?[o]?[n]?)\s+([a-zA-Z_]\w*)\s*(\()?)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.type.function.vbnet</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.vbnet</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>meta.parameters.vbnet</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.vbnet</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\))?\s*</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.vbnet</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.function.vbnet</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#otherKeywords</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#supportTypes</string>
+				</dict>
+			</array>
 		</dict>
 		<key>numericConstant</key>
 		<dict>
