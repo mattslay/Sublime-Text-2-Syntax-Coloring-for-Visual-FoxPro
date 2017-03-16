@@ -26,7 +26,7 @@ I'm sure there is plenty of work that needs to be done on the JSON definition fi
 
 (Note: the current list of keywords that you'll see at the top of my JSON file is just a list I extraced from an existing NotePad++ syntax file that's been around for a few years. I have moved a few of the keywords out of this main blob and down into sepatate blocks at the bottom of the file to make it clearer and to begin the proper separation of the words by their syntax type. More work probably needs to be done in
 
-So, if you want to dig in and get involoved, here are the steps to learn the JSON syntax for defining a language file in Sublime Text, and the steps you'll need to take to do a "build" on that JSON file to generate the working XML file that ultimately does the actual work. Hint, you've got to install a little package in Sublime to get the JSON-to-XML builder tool. You'll see instructions at the very top of this page:  
+So, if you want to dig in and get involved, here are the steps to learn the JSON syntax for defining a language file in Sublime Text, and the steps you'll need to take to do a "build" on that JSON file to generate the working XML file that ultimately does the actual work. Hint, you've got to install a little package in Sublime to get the JSON-to-XML builder tool. You'll see instructions at the very top of this page:  
 >http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/syntaxdefs.html?highlight=syntax
 
 ## Additional resources...
